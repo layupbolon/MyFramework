@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Framework.Core
+namespace Framework.Core.Logging
 {
-    public class Class1
+    public class NHHBizLogger : IBizLogger
     {
     }
 }

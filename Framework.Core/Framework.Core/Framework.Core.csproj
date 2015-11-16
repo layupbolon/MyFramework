@@ -30,8 +30,79 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.International.Converters.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gma.QrCodeNet.Encoding, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QrCode.Net.0.4.0.0\lib\net45\Gma.QrCodeNet.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLInclude\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLInclude\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLInclude\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLInclude\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +110,98 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BizLogic\BizCacheObject.cs" />
+    <Compile Include="BizLogic\BizObject.cs" />
+    <Compile Include="BizLogic\BizObjectFactory.cs" />
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Configuration\ConfigFileAttribute.cs" />
+    <Compile Include="Configuration\ConfigManager.cs" />
+    <Compile Include="Configuration\FolderConfigSection.cs" />
+    <Compile Include="Configuration\ParamConfig.cs" />
+    <Compile Include="Configuration\ParamItemInfo.cs" />
+    <Compile Include="Configuration\ServiceConfig.cs" />
+    <Compile Include="Configuration\ServiceItemInfo.cs" />
+    <Compile Include="Data\Configuration\DataCommand.cs" />
+    <Compile Include="Data\Configuration\DataConfig.cs" />
+    <Compile Include="Data\Configuration\DataParameter.cs" />
+    <Compile Include="Data\DataCommandManager.cs" />
+    <Compile Include="Data\IEditable.cs" />
+    <Compile Include="Data\IStatusFlag.cs" />
+    <Compile Include="Data\NHHDbConfiguration.cs" />
+    <Compile Include="Data\NHHDbLogFormatter.cs" />
+    <Compile Include="Drawing\ImageSize.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Exceptions\NHHException.cs" />
+    <Compile Include="IO\DFISHelper.cs" />
+    <Compile Include="IO\ExcelUtils.cs" />
+    <Compile Include="IO\PathUtils.cs" />
+    <Compile Include="Linq\Dynamic.cs" />
+    <Compile Include="Logging\IAPILogger.cs" />
+    <Compile Include="Logging\IAPPLogger.cs" />
+    <Compile Include="Logging\IBizLogger.cs" />
+    <Compile Include="Logging\LoggerManager.cs" />
+    <Compile Include="Logging\NHHAPILogger.cs" />
+    <Compile Include="Logging\NHHAppLogger.cs" />
+    <Compile Include="Logging\NHHBizLogger.cs" />
+    <Compile Include="MSMQ\MQueue.cs" />
+    <Compile Include="MSMQ\MQueueFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCode\QRCodeHelper.cs" />
+    <Compile Include="Security\Cryptography\AbstractCryptographer.cs" />
+    <Compile Include="Security\Cryptography\CryptoAlgorithm.cs" />
+    <Compile Include="Security\Cryptography\Cryptographer.cs" />
+    <Compile Include="Security\Cryptography\DataMode.cs" />
+    <Compile Include="Security\Cryptography\DESCryptorapher.cs" />
+    <Compile Include="Security\Cryptography\EncrypHelper.cs" />
+    <Compile Include="Security\Cryptography\Hash\AbstractHashCryptographer.cs" />
+    <Compile Include="Security\Cryptography\Hash\HMACMD5HashCryptographer.cs" />
+    <Compile Include="Security\Cryptography\Hash\IHashCryptographer.cs" />
+    <Compile Include="Security\Cryptography\Hash\MD5HashCryptographer.cs" />
+    <Compile Include="Security\Cryptography\Hash\SHA1HashCryptographer.cs" />
+    <Compile Include="Security\Cryptography\ICryptographer.cs" />
+    <Compile Include="Security\Cryptography\RC2Cryptorapher.cs" />
+    <Compile Include="Security\Cryptography\RijndaelCryptorapher.cs" />
+    <Compile Include="Security\Cryptography\RSACryptorapher.cs" />
+    <Compile Include="Security\Cryptography\TripleDESCryptorapher.cs" />
+    <Compile Include="Service\MessageBag.cs" />
+    <Compile Include="Service\NHHService.cs" />
+    <Compile Include="Service\NHHServiceFactory.cs" />
+    <Compile Include="Text\HexEncoding.cs" />
+    <Compile Include="Utility\AssertUtils.cs" />
+    <Compile Include="Utility\Converter.cs" />
+    <Compile Include="Utility\CookieHelper.cs" />
+    <Compile Include="Utility\EnumHelper.cs" />
+    <Compile Include="Utility\HttpHelper.cs" />
+    <Compile Include="Utility\ParamManager.cs" />
+    <Compile Include="Utility\RandomHelper.cs" />
+    <Compile Include="Utility\SqlHelper.cs" />
+    <Compile Include="Utility\UrlHelper.cs" />
+    <Compile Include="Web\Extension.cs" />
+    <Compile Include="Web\NHHAuthentication.cs" />
+    <Compile Include="Web\NHHAuthorizeAttribute.cs" />
+    <Compile Include="Web\NHHController.cs" />
+    <Compile Include="Web\NHHHandleErrorAttribute.cs" />
+    <Compile Include="Web\NHHIdentity.cs" />
+    <Compile Include="Web\NHHJsonResult.cs" />
+    <Compile Include="Web\NHHPrincipal.cs" />
+    <Compile Include="Web\NHHWebContext.cs" />
+    <Compile Include="Web\NHHWebModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLInclude\NPOI.dll" />
+    <Content Include="DLLInclude\NPOI.OOXML.dll" />
+    <Content Include="DLLInclude\NPOI.OOXML.xml" />
+    <Content Include="DLLInclude\NPOI.OpenXml4Net.dll" />
+    <Content Include="DLLInclude\NPOI.OpenXml4Net.xml" />
+    <Content Include="DLLInclude\NPOI.OpenXmlFormats.dll" />
+    <Content Include="DLLInclude\NPOI.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
