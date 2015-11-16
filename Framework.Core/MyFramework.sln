@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Core", "Framework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Core.Wechat", "Framework.Core.Wechat\Framework.Core.Wechat.csproj", "{9B45D659-2255-41AD-9C67-DF33A6F55201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{A06874F7-D381-438D-8A80-F7DC6A5569C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9B45D659-2255-41AD-9C67-DF33A6F55201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B45D659-2255-41AD-9C67-DF33A6F55201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B45D659-2255-41AD-9C67-DF33A6F55201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A06874F7-D381-438D-8A80-F7DC6A5569C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06874F7-D381-438D-8A80-F7DC6A5569C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06874F7-D381-438D-8A80-F7DC6A5569C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06874F7-D381-438D-8A80-F7DC6A5569C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
