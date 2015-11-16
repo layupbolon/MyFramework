@@ -7,10 +7,10 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            WechatPush wechatPush = new WechatPush();
-            string token = wechatPush.GetAccessToken();
-            Console.WriteLine(token);
-            Console.ReadKey();
+            //WechatPush wechatPush = new WechatPush();
+            //string token = wechatPush.GetAccessToken();
+            //Console.WriteLine(token);
+            //Console.ReadKey();
         }
     }
 }
